@@ -1,4 +1,4 @@
-package me.emmiesa.flowercore.utils.command;
+package me.emmy.basic.utils.command;
 
 import org.apache.commons.lang.Validate;
 import org.bukkit.command.CommandException;

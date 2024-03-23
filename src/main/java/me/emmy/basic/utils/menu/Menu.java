@@ -1,9 +1,9 @@
-package me.emmiesa.flowercore.utils.menu;
+package me.emmy.basic.utils.menu;
 
 import lombok.Getter;
 import lombok.Setter;
-import me.emmiesa.flowercore.FlowerCore;
-import me.emmiesa.flowercore.utils.chat.CC;
+import me.emmy.basic.Basic;
+import me.emmy.basic.utils.chat.CC;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -21,7 +21,7 @@ public abstract class Menu {
     public static Map<String, Menu> currentlyOpenedMenus = new HashMap<>();
 
     @Getter
-    protected FlowerCore ricardo = FlowerCore.getInstance();
+    protected Basic ricardo = Basic.getInstance();
     private Map<Integer, Button> buttons = new HashMap<>();
     private boolean autoUpdate = false;
     private boolean updateAfterClick = true;

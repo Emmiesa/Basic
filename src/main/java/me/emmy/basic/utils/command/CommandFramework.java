@@ -1,8 +1,7 @@
-package me.emmiesa.flowercore.utils.command;
+package me.emmy.basic.utils.command;
 
-import me.emmiesa.flowercore.FlowerCore;
-import me.emmiesa.flowercore.Locale;
-import me.emmiesa.flowercore.utils.chat.CC;
+import me.emmy.basic.Basic;
+import me.emmy.basic.utils.chat.CC;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandExecutor;
@@ -25,10 +24,10 @@ import java.util.Map.Entry;
 public class CommandFramework implements CommandExecutor {
 
     private final Map<String, Entry<Method, Object>> commandMap = new HashMap<String, Entry<Method, Object>>();
-    private final FlowerCore plugin;
+    private final Basic plugin;
     private CommandMap map;
 
-    public CommandFramework(FlowerCore plugin) {
+    public CommandFramework(Basic plugin) {
         this.plugin = plugin;
         if (plugin.getServer().getPluginManager() instanceof SimplePluginManager) {
             SimplePluginManager manager = (SimplePluginManager) plugin.getServer().getPluginManager();
@@ -65,7 +64,7 @@ public class CommandFramework implements CommandExecutor {
                     return true;
                 }
                 if (!command.permission().equals("") && (!sender.hasPermission(command.permission()))) {
-                    sender.sendMessage(CC.translate(Locale.NO_PERM)); // TODO change
+                    sender.sendMessage(CC.translate("&cNo permission.")); // TODO change
                     return true;
                 }
                 if (command.inGameOnly() && !(sender instanceof Player)) {
@@ -199,7 +198,7 @@ public class CommandFramework implements CommandExecutor {
         String label = args.getLabel();
         String[] parts = label.split(":");
 
-        if (args.getSender().hasPermission(FlowerCore.getInstance().getConfig("messages.yml").getString("anti-syntax-bypass-perm"))) {
+        if (args.getSender().hasPermission("basic.owner")) {
             if (parts.length > 1) {
                 String commandToExecute = parts[1];
 
@@ -218,7 +217,7 @@ public class CommandFramework implements CommandExecutor {
                 args.getSender().sendMessage(CC.translate("&cMissing arguments / Wrong format or Internal error."));
             }
         } else {
-            args.getSender().sendMessage(CC.translate(FlowerCore.getInstance().getConfig("messages.yml").getString("anti-syntax").replace("%argument%", args.getLabel())));
+            args.getSender().sendMessage(CC.translate("&cNo permission lol."));
         }
     }
 }

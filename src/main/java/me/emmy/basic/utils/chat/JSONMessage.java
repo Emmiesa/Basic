@@ -1,4 +1,4 @@
-package me.emmiesa.flowercore.utils.chat;
+package me.emmy.basic.utils.chat;
 
 import com.google.common.base.Strings;
 import com.google.common.collect.BiMap;

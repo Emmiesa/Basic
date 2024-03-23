@@ -1,6 +1,8 @@
 name: Basic
 version: '${project.version}'
 main: me.emmy.basic.Basic
-authors: [Emmyy]
+author: Emmy
 description: MMC Replica
 website: dsc.gg/dulcy
+softdepend:
+  - PlaceholderAPI

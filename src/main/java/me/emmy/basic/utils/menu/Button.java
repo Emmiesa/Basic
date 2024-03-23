@@ -1,4 +1,4 @@
-package me.emmiesa.flowercore.utils.menu;
+package me.emmy.basic.utils.menu;
 
 import org.apache.commons.lang.StringUtils;
 import org.bukkit.Material;

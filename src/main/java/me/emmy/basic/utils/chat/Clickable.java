@@ -1,4 +1,4 @@
-package me.emmy.basic.utils;
+package me.emmy.basic.utils.chat;
 
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package me.emmiesa.flowercore.utils.chat;
+package me.emmy.basic.utils.chat;
 
 /**
  * Created by somebody unknown

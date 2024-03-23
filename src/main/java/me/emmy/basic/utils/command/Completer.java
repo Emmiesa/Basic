@@ -1,4 +1,4 @@
-package me.emmiesa.flowercore.utils.command;
+package me.emmy.basic.utils.command;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

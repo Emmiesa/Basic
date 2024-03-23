@@ -1,6 +1,6 @@
-package me.emmiesa.flowercore.utils.menu;
+package me.emmy.basic.utils.menu;
 
-import me.emmiesa.flowercore.FlowerCore;
+import me.emmy.basic.Basic;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -59,7 +59,7 @@ public class MenuListener implements Listener {
                 }
 
                 if (event.isCancelled()) {
-                    Bukkit.getScheduler().runTaskLater(FlowerCore.getInstance(), player::updateInventory, 1L);
+                    Bukkit.getScheduler().runTaskLater(Basic.getInstance(), player::updateInventory, 1L);
                 }
             } else {
                 if (event.getCurrentItem() != null) {

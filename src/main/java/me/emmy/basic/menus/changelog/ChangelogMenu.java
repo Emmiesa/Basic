@@ -1,5 +1,6 @@
 package me.emmy.basic.menus.changelog;
 
+import me.clip.placeholderapi.PlaceholderAPI;
 import me.emmy.basic.Basic;
 import me.emmy.basic.utils.chat.CC;
 import me.emmy.basic.utils.menu.Button;
@@ -19,14 +20,13 @@ import java.util.stream.Collectors;
 /**
  * Created by Emmy
  * Project: FlowerHub
- * GitHub: https://github.com/Emmiesa
  */
 
-public class NewsMenu extends Menu {
+public class ChangelogMenu extends Menu {
 
 	private final RefillGlassButton refillGlassButton;
 
-	public NewsMenu() {
+	public ChangelogMenu() {
 		this.refillGlassButton = new RefillGlassButton(
 				Material.STAINED_GLASS_PANE,
 				Basic.getInstance().getConfig().getInt("changelog-menu.refill-glass.data", 15)
@@ -58,12 +58,11 @@ public class NewsMenu extends Menu {
 					int data = serverSection.getInt("data", 0);
 					Material material = new MaterialData(materialType, (byte) data).toItemStack().getType();
 
-					buttons.put(slot, new NewsButton(material, (short) data, name, lore, serverSection.getString("command")));
+					buttons.put(slot, new ChangelogButton(material, (short) data, name, lore, serverSection.getString("command")));
 				}
 			}
 		}
 
-		// Add refill glass button
 		ConfigurationSection refillGlassSection = Basic.getInstance().getConfig().getConfigurationSection("changelog-menu.refill-glass");
 		if (refillGlassSection != null && refillGlassSection.getBoolean("enabled", true)) {
 			List<String> refillSlots = refillGlassSection.getStringList("slots");

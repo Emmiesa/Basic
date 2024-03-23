@@ -1,4 +1,4 @@
-package me.emmiesa.flowercore.utils.item;
+package me.emmy.basic.utils.item;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

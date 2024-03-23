@@ -1,4 +1,4 @@
-package me.emmy.basic.menus.changelog.button;
+package me.emmy.basic.menus.changelog;
 
 import me.emmy.basic.utils.item.ItemBuilder;
 import me.emmy.basic.utils.menu.Button;
@@ -13,18 +13,17 @@ import java.util.List;
 /**
  * Created by Emmy
  * Project: FlowerHub
- * GitHub: https://github.com/Emmiesa
  */
 
-public class NewsButton extends Button {
+public class ChangelogButton extends Button {
 
-	private Material material;
-	private short data;
-	private String displayName;
-	private List<String> lore;
-	private String command;
+	private final Material material;
+	private final short data;
+	private final String displayName;
+	private final List<String> lore;
+	private final String command;
 
-	public NewsButton(Material material, short data, String displayName, List<String> lore, String command) {
+	public ChangelogButton(Material material, short data, String displayName, List<String> lore, String command) {
 		this.material = material;
 		this.data = data;
 		this.displayName = displayName;

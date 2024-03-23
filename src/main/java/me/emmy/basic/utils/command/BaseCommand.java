@@ -1,10 +1,10 @@
-package me.emmiesa.flowercore.utils.command;
+package me.emmy.basic.utils.command;
 
-import me.emmiesa.flowercore.FlowerCore;
+import me.emmy.basic.Basic;
 
 public abstract class BaseCommand {
 
-    public FlowerCore main = FlowerCore.getInstance();
+    public Basic main = Basic.getInstance();
 
     public BaseCommand() {
         main.getFramework().registerCommands(this);

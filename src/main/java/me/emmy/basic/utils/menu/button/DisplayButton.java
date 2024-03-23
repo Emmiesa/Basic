@@ -1,9 +1,9 @@
-package me.emmiesa.flowercore.utils.menu.button;
+package me.emmy.basic.utils.menu.button;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-import me.emmiesa.flowercore.utils.menu.Button;
+import me.emmy.basic.utils.menu.Button;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.ClickType;

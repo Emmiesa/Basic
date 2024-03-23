@@ -1,4 +1,4 @@
-package me.emmiesa.flowercore.utils.command;
+package me.emmy.basic.utils.command;
 
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;

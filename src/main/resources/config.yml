@@ -1,0 +1,45 @@
+commands:
+  discord: "&eDiscord: &dminemen.club/discord"
+  store: "&eStore: &dstore.minemen.club"
+  website: "&eWebsite: &dminemen.club"
+  tiktok: "&eTikTok: &dtiktok.com/@minemen_club"
+  twitter: "&eTwitter: &dtwitter.com/Minemen_Network"
+  youtube: "&eYouTube: &dyoutube.com/@minemen_club"
+
+changelog-menu:
+  title: "&e&lLatest News"
+  size: 18
+  items:
+    update-1:
+      name: "&e&lFireball Event"
+      slot: 9
+      material: BOOK
+      data: 0
+      lore:
+        - "&eTime: &dMar 16, 2024"
+        - ""
+        - "&eClick to view!"
+      command: "openbook 9237"
+    update-2:
+      name: "&e&lBridges Update"
+      slot: 10
+      material: BOOK
+      data: 0
+      lore:
+        - "&eTime: &dDec 31, 2023"
+        - ""
+        - "&eClick to view!"
+      command: "openbook 2523"
+  refill-glass:
+    enabled: true
+    data: 15
+    slots:
+      - "0"
+      - "1"
+      - "2"
+      - "3"
+      - "4"
+      - "5"
+      - "6"
+      - "7"
+      - "8"
