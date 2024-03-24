@@ -1,4 +1,4 @@
-package me.emmy.basic.commands.menus;
+package me.emmy.basic.commands;
 
 import me.emmy.basic.utils.command.BaseCommand;
 import me.emmy.basic.utils.command.Command;

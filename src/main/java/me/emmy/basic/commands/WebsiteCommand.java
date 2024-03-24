@@ -1,4 +1,4 @@
-package me.emmy.basic.commands.socials;
+package me.emmy.basic.commands;
 
 import me.emmy.basic.Basic;
 import me.emmy.basic.utils.chat.CC;
@@ -10,15 +10,15 @@ import org.bukkit.command.CommandSender;
 /**
  * Created by Emmy
  * Project: Basic
- * Date: 23/03/2024 - 01:22
+ * Date: 23/03/2024 - 01:27
  */
 
-public class DiscordCommand extends BaseCommand {
+public class WebsiteCommand extends BaseCommand {
     @Override
-    @Command(name = "discord", inGameOnly = false)
+    @Command(name = "website", inGameOnly = false)
     public void onCommand(CommandArgs command) {
         CommandSender sender = command.getSender();
 
-        sender.sendMessage(CC.translate(Basic.getInstance().getConfig().getString("commands.discord")));
+        sender.sendMessage(CC.translate(Basic.getInstance().getConfig().getString("commands.website")));
     }
 }

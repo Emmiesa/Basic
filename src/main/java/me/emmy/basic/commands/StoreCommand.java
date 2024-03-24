@@ -1,4 +1,4 @@
-package me.emmy.basic.commands.socials;
+package me.emmy.basic.commands;
 
 import me.emmy.basic.Basic;
 import me.emmy.basic.utils.chat.CC;

@@ -121,23 +121,19 @@ public class CC {
         return toReturn;
     }
 
-    public static void on(long timeTaken) {
+    public static void on() {
         Bukkit.getConsoleSender().sendMessage(" ");
-        Bukkit.getConsoleSender().sendMessage(CC.translate("&8&m-----------------------------------------------"));
-        Bukkit.getConsoleSender().sendMessage(CC.translate(" &f| Plugin: &b" + Basic.getInstance().getDescription().getName()));
-        Bukkit.getConsoleSender().sendMessage(CC.translate(" &f| Authors: &b" + Basic.getInstance().getDescription().getAuthors().toString().replace("[", "").replace("]", "")));
-        Bukkit.getConsoleSender().sendMessage(CC.translate(" "));
-        Bukkit.getConsoleSender().sendMessage(CC.translate(" &f| Version: &b" + Basic.getInstance().getDescription().getVersion()));
-        Bukkit.getConsoleSender().sendMessage(CC.translate(" &f| Link: &b" + Basic.getInstance().getDescription().getWebsite()));
-        Bukkit.getConsoleSender().sendMessage(CC.translate(" "));
-        Bukkit.getConsoleSender().sendMessage(CC.translate(" &f| Load time: &b" + (timeTaken) + " &bms"));
-        Bukkit.getConsoleSender().sendMessage(CC.translate("&8&m-----------------------------------------------"));
+        Bukkit.getConsoleSender().sendMessage(CC.translate("&d&m-----------------------------------------------"));
+        Bukkit.getConsoleSender().sendMessage(CC.translate(" &eBasic core replica by &dEmmy&e!"));
+        Bukkit.getConsoleSender().sendMessage(CC.translate("&d&m-----------------------------------------------"));
         Bukkit.getConsoleSender().sendMessage(" ");
     }
 
     public static void off() {
         Bukkit.getConsoleSender().sendMessage(" ");
-        Bukkit.getConsoleSender().sendMessage(CC.translate("&8[&bFlowerCore&8] &fDisabled &bFlowerCore&f!"));
+        Bukkit.getConsoleSender().sendMessage(CC.translate("&4&m-----------------------------------------------"));
+        Bukkit.getConsoleSender().sendMessage(CC.translate(" &cDisabling &eBasic&c!"));
+        Bukkit.getConsoleSender().sendMessage(CC.translate("&4&m-----------------------------------------------"));
         Bukkit.getConsoleSender().sendMessage(" ");
     }
 }

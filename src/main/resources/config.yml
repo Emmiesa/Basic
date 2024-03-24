@@ -6,6 +6,11 @@ commands:
   twitter: "&eTwitter: &dtwitter.com/Minemen_Network"
   youtube: "&eYouTube: &dyoutube.com/@minemen_club"
 
+join:
+  usage: "&e&lUsage: &e/join &d&l<server>"
+  joining: "&eJoining &d{server}&e..."
+  failed: "&cThere is no online server named &e{server}&c."
+
 changelog-menu:
   title: "&e&lLatest News"
   size: 18

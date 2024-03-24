@@ -1,4 +1,4 @@
-package me.emmy.basic.commands.socials;
+package me.emmy.basic.commands;
 
 import me.emmy.basic.Basic;
 import me.emmy.basic.utils.chat.CC;
@@ -10,15 +10,15 @@ import org.bukkit.command.CommandSender;
 /**
  * Created by Emmy
  * Project: Basic
- * Date: 23/03/2024 - 01:32
+ * Date: 23/03/2024 - 01:22
  */
 
-public class TiktokCommand extends BaseCommand {
+public class DiscordCommand extends BaseCommand {
     @Override
-    @Command(name = "tiktok", inGameOnly = false)
+    @Command(name = "discord", inGameOnly = false)
     public void onCommand(CommandArgs command) {
         CommandSender sender = command.getSender();
 
-        sender.sendMessage(CC.translate(Basic.getInstance().getConfig().getString("commands.tiktok")));
+        sender.sendMessage(CC.translate(Basic.getInstance().getConfig().getString("commands.discord")));
     }
 }

@@ -1,4 +1,4 @@
-package me.emmy.basic.commands.toggle;
+package me.emmy.basic.commands;
 
 import me.emmy.basic.utils.command.BaseCommand;
 import me.emmy.basic.utils.command.Command;
