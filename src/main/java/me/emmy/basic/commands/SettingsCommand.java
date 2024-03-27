@@ -1,5 +1,6 @@
 package me.emmy.basic.commands;
 
+import me.emmy.basic.menus.settings.SettingsMenu;
 import me.emmy.basic.utils.command.BaseCommand;
 import me.emmy.basic.utils.command.Command;
 import me.emmy.basic.utils.command.CommandArgs;
@@ -17,6 +18,6 @@ public class SettingsCommand extends BaseCommand {
     public void onCommand(CommandArgs command) {
         Player player = command.getPlayer();
 
-
+        new SettingsMenu().openMenu(player);
     }
 }
