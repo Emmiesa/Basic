@@ -1,7 +1,7 @@
-package me.emmy.basic.commands;
+package me.emmy.basic.commands.global;
 
 import me.emmy.basic.Basic;
-import me.emmy.basic.utils.BungeeUtil;
+import me.emmy.basic.utils.others.JoinCommandUtil;
 import me.emmy.basic.utils.chat.CC;
 import me.emmy.basic.utils.command.BaseCommand;
 import me.emmy.basic.utils.command.Command;
@@ -27,6 +27,6 @@ public class JoinCommand extends BaseCommand {
         }
 
         String server = command.getArgs(0);
-        BungeeUtil.sendPlayer(player, server);
+        JoinCommandUtil.sendPlayer(player, server);
     }
 }

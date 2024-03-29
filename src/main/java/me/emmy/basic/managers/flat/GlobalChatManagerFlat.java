@@ -1,4 +1,4 @@
-package me.emmy.basic.player;
+package me.emmy.basic.managers.flat;
 
 import me.emmy.basic.Basic;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -14,11 +14,11 @@ import java.util.UUID;
  * Date: 27/03/2024 - 22:36
  */
 
-public class PlayerSettingsManager {
+public class GlobalChatManagerFlat {
     private final Map<UUID, Boolean> globalChatSettings;
     private final FileConfiguration config;
 
-    public PlayerSettingsManager() {
+    public GlobalChatManagerFlat() {
         this.globalChatSettings = new HashMap<>();
         this.config = Basic.getInstance().getConfig();
     }

@@ -1,3 +1,9 @@
+#database-type: "FLAT_FILE" #Types: FLAT_FILE, MONGODB
+
+#database:
+#  uri: "mongodb://localhost:27017"
+#  collection: "basic"
+
 commands:
   discord: "&eDiscord: &dminemen.club/discord"
   store: "&eStore: &dstore.minemen.club"
@@ -11,12 +17,26 @@ join:
   joining: "&eJoining &d{server}&e..."
   failed: "&cThere is no online server named &e{server}&c."
 
-chat:
+global-chat:
   status-changed: "&eGlobal chat is now {status} &efor you."
   format: # {status}
     enabled: "&aenabled"
     disabled: "&cdisabled"
   disabled: "&cYou have the global chat disabled, so you cannot chat either. (/toggleglobalchat)"
+
+chat-filter:
+  status-changed: "&eChat filter is now {status} &efor you."
+  format: # {status}
+    enabled: "&aenabled"
+    disabled: "&cdisabled"
+  banned-words:
+    - fool
+    - dumb
+    - shit
+    - retard
+    - fuck
+    - kys
+
 settings-menu:
   title: "&e&lSettings"
   size: 27
@@ -72,7 +92,7 @@ settings-menu:
         - " "
         - " "
         - "&eClick to change!"
-      command: "openbook 2523"
+      command: "togglechatfilter"
   refill-glass:
     enabled: true
     data: 15
@@ -144,7 +164,8 @@ changelog-menu:
       - "7"
       - "8"
 
-#Storage
+#Storage (!) true = enabled, false = disabled. Not like this: Global chat is disabled = false. It depends on the settings being enabled or not. (!)
 player-settings:
   ce4edfc7-7058-4266-9dd6-17c8b9f43dbe:
-    global-chat: false
+    global-chat: true
+    chat-filter: true

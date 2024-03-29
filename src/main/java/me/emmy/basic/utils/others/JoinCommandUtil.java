@@ -1,4 +1,4 @@
-package me.emmy.basic.utils;
+package me.emmy.basic.utils.others;
 
 import me.emmy.basic.Basic;
 import me.emmy.basic.utils.chat.CC;
@@ -15,7 +15,7 @@ import java.io.IOException;
  * Date: 24/03/2024 - 12:17
  */
 
-public class BungeeUtil {
+public class JoinCommandUtil {
 
     public static void sendPlayer(Player player, String server) {
         ByteArrayOutputStream b = new ByteArrayOutputStream();
