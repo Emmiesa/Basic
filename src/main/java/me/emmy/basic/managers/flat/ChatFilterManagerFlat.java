@@ -59,7 +59,7 @@ public class ChatFilterManagerFlat {
         return bannedWords.contains(word.toLowerCase());
     }
 
-    public void addBannedWord(String word) {
+    /*public void addBannedWord(String word) {
         bannedWords.add(word.toLowerCase());
         saveBannedWords();
     }
@@ -72,5 +72,5 @@ public class ChatFilterManagerFlat {
     private void saveBannedWords() {
         config.set("chat-filter.banned-words", new HashSet<>(bannedWords));
         Basic.getInstance().saveConfig();
-    }
+    }*/
 }

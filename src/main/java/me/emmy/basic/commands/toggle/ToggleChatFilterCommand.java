@@ -7,6 +7,12 @@ import me.emmy.basic.utils.command.Command;
 import me.emmy.basic.utils.command.CommandArgs;
 import org.bukkit.entity.Player;
 
+/**
+ * Created by Emmy
+ * Project: Basic
+ * Date: 29/03/2024 - 00:24
+ */
+
 public class ToggleChatFilterCommand extends BaseCommand {
 
     @Override
