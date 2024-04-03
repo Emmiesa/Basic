@@ -164,7 +164,7 @@ changelog-menu:
       - "7"
       - "8"
 
-#Storage (!) true = enabled, false = disabled. Not like this: Global chat is disabled = false. It depends on the settings being enabled or not. (!)
+#Storage
 player-settings:
   ce4edfc7-7058-4266-9dd6-17c8b9f43dbe:
     global-chat: true
